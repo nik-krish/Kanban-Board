@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>Kanban Board</h1>
+            <button id="addtaskbtn">Add Task</button>
+        </header>
+        
+        <div id="statusContainer" class="drag-drop-container"></div>
+        <div id="taskformpopup" class="popup">
+            <button id="closepopupbtn">Close</button>
+            <form id="taskform">
+                <label for="tasktitle">Title:</label>
+                <input type="text" id="tasktitle" name="'title">
+                <label for="taskdesc">Description:</label>
+                <textarea id="taskdesc" name="description"></textarea>
+                <label for="taskdate">Due Date</label>
+                <input type="date" id="taskdate" name="date">
+                <label for="taskstatus">Status:</label>
+                <select id="taskstatus" name="status">
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div id="taskdetailspopup" class="detailspopup">
+            <h3 id="taskdetailstitle"></h3>
+            <p id="taskdetailsdesc"></p>
+            <p id="taskdetailsdate"></p>
+            <p id="taskdetailsstatus"></p>
+            <button id="closedetailspopupbtn">Close</button>
+
+        </div>
+        <div id="edittaskpopup" class="popup">
+            <button id="closeeditpopupbtn">Close</button>
+            <form id="edittaskform">
+                <input type="hidden" id="edittaskid">
+                <label for="edittasktitle">Title:</label>
+                <input type="text" id="edittasktitle" name="title">
+                <label for="edittaskdesc">Description:</label>
+                <textarea id="edittaskdesc" name="description"></textarea>
+                <label for="edittaskdate">Due Date</label>
+                <input type="date" id="edittaskdate" name="date">
+                <label for="edittaskstatus">Status:</label>
+                <select id="edittaskstatus" name="status">
+                </select>
+                <button type="submit">Edit Task</button>
+
+            </form>
+        </div>
+        <div id="validationpopup" class="popup">
+            <button id="closevalidationpopupbtn">Close</button>
+            <p id="validationmessage"></p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+.container{
+    width: 100%;
+
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: grey;
+    box-shadow: black;
+    position:relative;
+    border-radius: 8px 0 8px 0;
+    
+}
+#addtaskbtn{
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: pink;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.drag-drop-container{
+    display: flex;
+    height:500px;
+}
+
+.col{background-color:grey ;
+    width: 100%;
+    margin:4px;
+    background:0 0 10px rgb(68, 7, 7);
+    border-radius: 8px 0 8px 0;
+    flex:1;
+    overflow-y:auto;
+    padding: 10px;
+    position:relative
+}
+.col h4 {
+    margin-bottom: 15px; 
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+.task{
+    position:relative;
+    padding:8px;
+    box-shadow: 0 0 10px rgb(68, 7, 7);
+    border-radius: 4px;
+    margin: 8px;
+    background:white;
+    cursor:pointer;
+    text-align: center;
+}
+.remove-task-btn {
+    background-color: red;
+    color: white;
+    padding: 2px 2px;
+    border: pink;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right:5px;
+}
+
+.popup{
+    display: none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: grey;
+    padding:20px;
+    box-shadow: 0 0 10px rgb(68, 7, 7);
+    border-radius:8px;
+    z-index: 1000;
+    
+    
+}
+#taskform,#edittaskform{
+    display: flex;
+    flex-direction: column;
+}
+.popup button{
+    background-color: red;
+    color:white;
+    padding: 10px 10px;
+    cursor:pointer;
+    border: pink;
+    border-radius: 4px;
+}
+
+.poplabel,.popup input, .popup textarea, .popup select {
+    margin-bottom: 10px;
+}
+.detailspopup{
+    display: none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: white;
+    padding:20px;
+    box-shadow: 0 0 10px rgb(68, 7, 7);
+    border-radius:8px;
+    z-index: 1000;
+    text-align: center;
+
+
+}
+
+#closedetailspopupbtn, #closevalidationpopupbtn {
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: pink;
+    border-radius: 4px;
+}
+.error-field {
+    color: rgb(216, 216, 22);
+  
+}
